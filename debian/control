@@ -1,0 +1,76 @@
+Source: rust-tiny-keccak
+Section: rust
+Priority: optional
+Build-Depends: debhelper (>= 12),
+ dh-cargo (>= 24),
+ cargo:native <!nocheck>,
+ rustc:native <!nocheck>,
+ libstd-rust-dev <!nocheck>,
+ librust-crunchy-0.2+default-dev (>= 0.2.2-~~) <!nocheck>
+Maintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
+Uploaders:
+ Sylvestre Ledru <sylvestre@debian.org>,
+ Wolfgang Silbermayr <wolfgang@silbermayr.at>
+Standards-Version: 4.5.1
+Vcs-Git: https://salsa.debian.org/rust-team/debcargo-conf.git [src/tiny-keccak]
+Vcs-Browser: https://salsa.debian.org/rust-team/debcargo-conf/tree/master/src/tiny-keccak
+Homepage: https://github.com/debris/tiny-keccak
+Rules-Requires-Root: no
+
+Package: librust-tiny-keccak-dev
+Architecture: any
+Multi-Arch: same
+Depends:
+ ${misc:Depends},
+ librust-crunchy-0.2+default-dev (>= 0.2.2-~~)
+Provides:
+ librust-tiny-keccak+cshake-dev (= ${binary:Version}),
+ librust-tiny-keccak+default-dev (= ${binary:Version}),
+ librust-tiny-keccak+fips202-dev (= ${binary:Version}),
+ librust-tiny-keccak+k12-dev (= ${binary:Version}),
+ librust-tiny-keccak+keccak-dev (= ${binary:Version}),
+ librust-tiny-keccak+kmac-dev (= ${binary:Version}),
+ librust-tiny-keccak+parallel-hash-dev (= ${binary:Version}),
+ librust-tiny-keccak+sha3-dev (= ${binary:Version}),
+ librust-tiny-keccak+shake-dev (= ${binary:Version}),
+ librust-tiny-keccak+sp800-dev (= ${binary:Version}),
+ librust-tiny-keccak+tuple-hash-dev (= ${binary:Version}),
+ librust-tiny-keccak-2-dev (= ${binary:Version}),
+ librust-tiny-keccak-2+cshake-dev (= ${binary:Version}),
+ librust-tiny-keccak-2+default-dev (= ${binary:Version}),
+ librust-tiny-keccak-2+fips202-dev (= ${binary:Version}),
+ librust-tiny-keccak-2+k12-dev (= ${binary:Version}),
+ librust-tiny-keccak-2+keccak-dev (= ${binary:Version}),
+ librust-tiny-keccak-2+kmac-dev (= ${binary:Version}),
+ librust-tiny-keccak-2+parallel-hash-dev (= ${binary:Version}),
+ librust-tiny-keccak-2+sha3-dev (= ${binary:Version}),
+ librust-tiny-keccak-2+shake-dev (= ${binary:Version}),
+ librust-tiny-keccak-2+sp800-dev (= ${binary:Version}),
+ librust-tiny-keccak-2+tuple-hash-dev (= ${binary:Version}),
+ librust-tiny-keccak-2.0-dev (= ${binary:Version}),
+ librust-tiny-keccak-2.0+cshake-dev (= ${binary:Version}),
+ librust-tiny-keccak-2.0+default-dev (= ${binary:Version}),
+ librust-tiny-keccak-2.0+fips202-dev (= ${binary:Version}),
+ librust-tiny-keccak-2.0+k12-dev (= ${binary:Version}),
+ librust-tiny-keccak-2.0+keccak-dev (= ${binary:Version}),
+ librust-tiny-keccak-2.0+kmac-dev (= ${binary:Version}),
+ librust-tiny-keccak-2.0+parallel-hash-dev (= ${binary:Version}),
+ librust-tiny-keccak-2.0+sha3-dev (= ${binary:Version}),
+ librust-tiny-keccak-2.0+shake-dev (= ${binary:Version}),
+ librust-tiny-keccak-2.0+sp800-dev (= ${binary:Version}),
+ librust-tiny-keccak-2.0+tuple-hash-dev (= ${binary:Version}),
+ librust-tiny-keccak-2.0.2-dev (= ${binary:Version}),
+ librust-tiny-keccak-2.0.2+cshake-dev (= ${binary:Version}),
+ librust-tiny-keccak-2.0.2+default-dev (= ${binary:Version}),
+ librust-tiny-keccak-2.0.2+fips202-dev (= ${binary:Version}),
+ librust-tiny-keccak-2.0.2+k12-dev (= ${binary:Version}),
+ librust-tiny-keccak-2.0.2+keccak-dev (= ${binary:Version}),
+ librust-tiny-keccak-2.0.2+kmac-dev (= ${binary:Version}),
+ librust-tiny-keccak-2.0.2+parallel-hash-dev (= ${binary:Version}),
+ librust-tiny-keccak-2.0.2+sha3-dev (= ${binary:Version}),
+ librust-tiny-keccak-2.0.2+shake-dev (= ${binary:Version}),
+ librust-tiny-keccak-2.0.2+sp800-dev (= ${binary:Version}),
+ librust-tiny-keccak-2.0.2+tuple-hash-dev (= ${binary:Version})
+Description: Keccak derived functions - Rust source code
+ This package contains the source for the Rust tiny-keccak crate, packaged by
+ debcargo for use with cargo and dh-cargo.

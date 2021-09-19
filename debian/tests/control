@@ -1,0 +1,64 @@
+Test-Command: /usr/share/cargo/bin/cargo-auto-test tiny-keccak 2.0.2 --all-targets --all-features
+Features: test-name=rust-tiny-keccak:@
+Depends: dh-cargo (>= 18), @
+Restrictions: allow-stderr, skip-not-installable, flaky
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test tiny-keccak 2.0.2 --all-targets --no-default-features --features cshake
+Features: test-name=librust-tiny-keccak-dev:cshake
+Depends: dh-cargo (>= 18), @
+Restrictions: allow-stderr, skip-not-installable, flaky
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test tiny-keccak 2.0.2 --all-targets 
+Features: test-name=librust-tiny-keccak-dev:default
+Depends: dh-cargo (>= 18), @
+Restrictions: allow-stderr, skip-not-installable, flaky
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test tiny-keccak 2.0.2 --all-targets --no-default-features --features fips202
+Features: test-name=librust-tiny-keccak-dev:fips202
+Depends: dh-cargo (>= 18), @
+Restrictions: allow-stderr, skip-not-installable, flaky
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test tiny-keccak 2.0.2 --all-targets --no-default-features --features k12
+Features: test-name=librust-tiny-keccak-dev:k12
+Depends: dh-cargo (>= 18), @
+Restrictions: allow-stderr, skip-not-installable, flaky
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test tiny-keccak 2.0.2 --all-targets --no-default-features --features keccak
+Features: test-name=librust-tiny-keccak-dev:keccak
+Depends: dh-cargo (>= 18), @
+Restrictions: allow-stderr, skip-not-installable, flaky
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test tiny-keccak 2.0.2 --all-targets --no-default-features --features kmac
+Features: test-name=librust-tiny-keccak-dev:kmac
+Depends: dh-cargo (>= 18), @
+Restrictions: allow-stderr, skip-not-installable, flaky
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test tiny-keccak 2.0.2 --all-targets --no-default-features --features parallel_hash
+Features: test-name=librust-tiny-keccak-dev:parallel_hash
+Depends: dh-cargo (>= 18), @
+Restrictions: allow-stderr, skip-not-installable, flaky
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test tiny-keccak 2.0.2 --all-targets --no-default-features --features sha3
+Features: test-name=librust-tiny-keccak-dev:sha3
+Depends: dh-cargo (>= 18), @
+Restrictions: allow-stderr, skip-not-installable, flaky
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test tiny-keccak 2.0.2 --all-targets --no-default-features --features shake
+Features: test-name=librust-tiny-keccak-dev:shake
+Depends: dh-cargo (>= 18), @
+Restrictions: allow-stderr, skip-not-installable, flaky
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test tiny-keccak 2.0.2 --all-targets --no-default-features --features sp800
+Features: test-name=librust-tiny-keccak-dev:sp800
+Depends: dh-cargo (>= 18), @
+Restrictions: allow-stderr, skip-not-installable, flaky
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test tiny-keccak 2.0.2 --all-targets --no-default-features --features tuple_hash
+Features: test-name=librust-tiny-keccak-dev:tuple_hash
+Depends: dh-cargo (>= 18), @
+Restrictions: allow-stderr, skip-not-installable, flaky
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test tiny-keccak 2.0.2 --all-targets --no-default-features
+Features: test-name=librust-tiny-keccak-dev:
+Depends: dh-cargo (>= 18), @
+Restrictions: allow-stderr, skip-not-installable, flaky
