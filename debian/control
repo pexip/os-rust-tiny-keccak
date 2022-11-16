@@ -7,8 +7,9 @@ Build-Depends: debhelper (>= 12),
  rustc:native <!nocheck>,
  libstd-rust-dev <!nocheck>,
  librust-crunchy-0.2+default-dev (>= 0.2.2-~~) <!nocheck>
-Maintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
-Uploaders:
+Maintainer: Pexip AS <packaging@pexip.com>
+XSBC-Pexip-Original-Maintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
+XSBC-Pexip-Original-Uploaders:
  Sylvestre Ledru <sylvestre@debian.org>,
  Wolfgang Silbermayr <wolfgang@silbermayr.at>
 Standards-Version: 4.5.1
@@ -16,6 +17,7 @@ Vcs-Git: https://salsa.debian.org/rust-team/debcargo-conf.git [src/tiny-keccak]
 Vcs-Browser: https://salsa.debian.org/rust-team/debcargo-conf/tree/master/src/tiny-keccak
 Homepage: https://github.com/debris/tiny-keccak
 Rules-Requires-Root: no
+XS-Pexip-Upstream: http://ftp.debian.org/debian/ bookworm
 
 Package: librust-tiny-keccak-dev
 Architecture: any
